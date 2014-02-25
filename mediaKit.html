@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title></title>   
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.8.3.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.js" type="text/javascript"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-ui.js" type="text/javascript"></script>
+    <script src="js/jquery.json-2.2.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.Storage.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            // run the currently selected effect
+            function runEffect() {
+                // get effect type from
+                var selectedEffect = $("#effectTypes").val();
+
+                // most effect types need no options passed by default
+                var options = {};
+                // some effects have required parameters
+                if (selectedEffect === "scale") {
+                    options = { percent: 0 };
+                } else if (selectedEffect === "size") {
+                    options = { to: { width: 200, height: 60 } };
+                }
+                // run the effect
+                $("#effect").toggle(selectedEffect, options, 300);
+            };
+
+            // set effect from select menu value
+            $("#button").click(function () {
+                runEffect();
+                return false;
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <div id="wraper">
+         <header style="overflow: hidden;">
+           <div style="background: #800000; height: 57px;">
+                
+            </div>
+            <select name="effects" id="effectTypes" style="display: none;">
+                <option value="drop">Drop</option>
+
+            </select>
+            <a href="#" id="button"></a>
+            <div class="toggler">
+                <div id="effect" class="ui-widget-content ui-corner-all" style="display: none;">
+                    <ul id="nav">
+                        <li><a href="userprofile.html" title="User Profile" target="_self">Profile</a> </li>
+                        <li><a href="SportsDefinitions.html" target="_self" title="Sports">Sports</a> </li>
+                        <li><a href="CreateArticle.html" title="CreateArticle" target="_self">Article</a> </li>
+                        <li><a href="CreateTeam.html" title="Teams" target="_self">Teams</a></li>
+                        <li><a href="CreateFanClub.html" title="Fanclubs" target="_self">Fanclubs</a></li>
+                        <li><a href="#" id="contactus" title="Contact Us">Contact</a></li> 
+                        <li><a href="Logout.html" title="Logout" target="_self">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+            <!-- header ends -->
+            <!-- container starts-->
+            <!-- inner menu starts-->
+            <div class="innermenu">
+                <ul class="clearfix">
+        	 <li><a href="index.html" title="home" target="_self">Home</a> </li>
+                    <li class="sep"></li>
+                    <li><a href="Welcome.html" title="profile" target="_self">Welcome</a> </li>
+                    <li class="sep"></li>
+                    <li><a href="sports.html" title="Sports" target="_self">Sports</a> </li>
+                    <li class="sep"></li>
+                    <li><a href="multicultural.html" title="profile" target="_self">Multicultural</a> </li>
+                    <li class="sep"></li>
+                    <li><a href="beDiscovered.html" title="profile" target="_self">BeDiscovered</a> </li>
+                    <li class="sep"></li>
+                    <li><a href="mediaKit.html" title="profile" target="_self">Media Resources</a> </li>
+          </ul>
+            </div>
+            <!-- inner menu ends-->
+            <div class="contetns">
+                <div class="innerwrapper">
+                    <h1>Media Kit</h1>
+                    <h6>Promote Your Services, Products…and more to the MyLifeSports World Community</h6>
+                    <p>At MyLifeSports.net our website was exclusively developed to provide you with the control,
+                     tools and flexibility to promote your content in an engaging environment; selecting the demographics 
+                     that best distributes to a marketplace without boundaries. Featuring over 30,000 sport selections and
+                      more than 4,000,000 personally identified sport, professional, business, health and sport related keywords……
+                       no global legacy sports site has our potential market reach capabilities!
+                     With accessibility through conventional desktop/laptop computers and iPad (Tablets), iPhone, 
+                     Android, Blackberry, Symbian, Nokia and other smart phone mobile applications, 
+                     MLS allows our members to take advantage of direct interest related content, on a single
+                     destination platform that spans a cross-generational market. 
+
+
+                     <br />
+                      <em>no global legacy sports site has our potential
+                       market reach capabilities!</em></p>
+                	<p>content, on a single destination platform that spans a cross-generational market. 
+                       If you are interested in <br />(1) representation by your agency for a client and receiving a copy of our Media Agency
+                       Advertising Fee Agreement or <br />(2) offering services and products to our members (including any of those mentioned 
+                      in our Advertising Assistance Platforms) or <br />(3) our  <strong>Reciprocal Media Bartering</strong> 
+                      opportunities, contact us at <a href="mailto:mylifesports@optimum.net">mylifesports@optimum.net</a>. </p>
+                      <br />
+                      <em>Please go to your desktop or tablet MLS version for complete Media Kit opportunities</em>
+                </div>
+            </div>
+           <!-- container ends-->
+            <!-- footer starts -->
+        </div>
+    </div>
+</body>
+</html>

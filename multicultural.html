@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.8.3.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.js" type="text/javascript"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-ui.js" type="text/javascript"></script>
+    <script src="js/jquery.json-2.2.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.Storage.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            // run the currently selected effect
+            function runEffect() {
+                // get effect type from
+                var selectedEffect = $("#effectTypes").val();
+
+                // most effect types need no options passed by default
+                var options = {};
+                // some effects have required parameters
+                if (selectedEffect === "scale") {
+                    options = { percent: 0 };
+                } else if (selectedEffect === "size") {
+                    options = { to: { width: 200, height: 60 } };
+                }
+                // run the effect
+                $("#effect").toggle(selectedEffect, options, 300);
+            };
+
+            // set effect from select menu value
+            $("#button").click(function () {
+                runEffect();
+                return false;
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="wraper">
+        <header style="overflow: hidden;">
+           <div style="background: #800000; height: 57px;">
+                
+            </div>
+            <select name="effects" id="effectTypes" style="display: none;">
+                <option value="drop">Drop</option>
+
+            </select>
+            <a href="#" id="button"></a>
+            <div class="toggler">
+                <div id="effect" class="ui-widget-content ui-corner-all" style="display: none;">
+                    <ul id="nav">
+                        <li><a href="userprofile.html" title="User Profile" target="_self">Profile</a> </li>
+                        <li><a href="SportsDefinitions.html" target="_self" title="Sports">Sports</a> </li>
+                        <li><a href="CreateArticle.html" title="CreateArticle" target="_self">Article</a> </li>
+                        <li><a href="CreateTeam.html" title="Teams" target="_self">Teams</a></li>
+                        <li><a href="CreateFanClub.html" title="Fanclubs" target="_self">Fanclubs</a></li>
+                        <li><a href="#" id="contactus" title="Contact Us">Contact</a></li> 
+                        <li><a href="Logout.html" title="Logout" target="_self">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+      <!-- header ends -->
+      <!-- container starts-->
+      <!-- inner menu starts-->
+<div class="innermenu">
+         <ul class="clearfix">
+        	 <li><a href="index.html" title="home" target="_self">Home</a> </li>
+                    <li class="sep"></li>
+                    <li><a href="Welcome.html" title="profile" target="_self">Welcome</a> </li>
+                    <li class="sep"></li>
+                    <li><a href="sports.html" title="Sports" target="_self">Sports</a> </li>
+                    <li class="sep"></li>
+                    <li><a href="multicultural.html" title="profile" target="_self">Multicultural</a> </li>
+                    <li class="sep"></li>
+                    <li><a href="beDiscovered.html" title="profile" target="_self">BeDiscovered</a> </li>
+                    <li class="sep"></li>
+                    <li><a href="mediaKit.html" title="profile" target="_self">Media Resources</a> </li>
+          </ul>
+       </div>	
+       <!-- inner menu ends-->
+      <div class="contetns">
+      	<div class="innerwrapper">
+              <h5>
+            MyLifeSports: Connecting Athletes From Around The World</h5>
+        <h6>
+            Thousands of World Sports</h6>
+        <p>
+            Since sports are global yet interpreted differently by various cultures, we support all of the world’s spoken and read languages. 
+            Members can create, preserve and share all content submissions in their languages of choice, selecting from any of our thousands of featured sports from around the world, individually represented sport home pages and over 4,000,0000 keywords/terms and interactive features 
+        </p>
+        
+        </div>
+      </div>
+      <!-- container ends-->
+       <!--<div class="shareIcons">
+            <h1>
+                Share This</h1>
+                <a href="http://www.facebook.com/pages/Kids2ProSportscom/246679545408252" title="facebook" target="_self"> <img alt="facebook"  
+                 src="images/m.facebook.png"/></a>
+                <a href="http://www.linkedin.com/in/kids2prosports  "" title="linkdin"> <img alt="linkdin" src="images/m.linkedin.png"/></a> 
+                <a href="https://twitter.com/#!/Kids2ProSports"title="Twitter" target="_self"><img alt="Twitter" src="images/m.twitter.png"/></a>
+                <a href="http://www.youtube.com/user/Kids2ProSports?ytsession=z-2bpR1F6KkzxpJXqUAuSu8npv_EAufzd8UxWG-
+                          wO5M7JJFFtEn4bzGiAjxyK77nRARXqOXvl0_lHPWLZSbjPLH5W6VE-
+                          Awt2DS2O0P13TfAJJIPjPnsPg2r0pvhvlcPvhJAC41cGiHg_FmPuR7MnwCoUVwPrdqonK2wykowr7AfvwqJbBaiQ4qoO7Z7M7ixFyTv2MB6OnHSs0Ztf6LbmUb8dI6xfiexczjVBMOjViU" 
+                           title="Youtube" target="_self"> <img alt="Youtube" src="images/m.youtube.png"/></a>
+                <a href="https://plus.google.com/105806218169115601024" title="Plus"> <img alt="Plus" src="images/m.Plus.png"/></a> 
+                <a href="http://pinterest.com/" title="Prinster"> <img alt="Prinster" src="images/m.printerest.png"/></a>
+        </div>-->
+
+           
+  </div>
+</body>
+</html>
