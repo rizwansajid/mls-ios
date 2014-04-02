@@ -7,14 +7,14 @@
   <preference name="phonegap-version" value="2.9.0" />
   <!-- versionCode is optional and Android only -->
 
-  <name>MyLifeSports</name>
+  <name>KidsToProSports</name>
 
   <description>
-    MyLifeSports is the world’s premier multicultural Global Sports Network and Legacy Search Engine. It’s exclusive “Timeline Features” provide the resources to Create, Share and Preserve “Your Sports Legacy“ from Childhood... to Professional and Beyond.
+    Kids2ProSports is the world’s premier multicultural Global Sports Network and Legacy Search Engine. It’s exclusive “Timeline Features” provide the resources to Create, Share and Preserve “Your Sports Legacy“ from Childhood… to Professional and Beyond.
   </description>
 
-  <author href="http://www.MyLifeSports.net" email="mylifesports@optimum.net">
-    Rizwan Sajid
+  <author href="http://www.kids2prosports.com" email="adnanlatif.324@gmail.com">
+    Adnan Latif
   </author>
   <icon src="images/icon.png" gap:role="default" />
   <!--icons -->

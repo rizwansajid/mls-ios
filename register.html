@@ -39,9 +39,7 @@
 
         $(document).ready(function () {
 
-            $("#contactus").click(function () {
-                window.open('http://www.kids2prosports.com/Static/ContactUs.aspx', '');
-            });
+           
             var online = navigator.onLine;    // Detecting the internet connection
             if (online) {
                 // do your stuff
@@ -84,12 +82,18 @@
                 <li><a href="CreateArticle.html" title="CreateArticle" target="_self">Article</a> </li>
                 <li><a href="CreateTeam.html" title="Teams" target="_self">Teams</a></li>
                 <li><a href="CreateFanClub.html" title="Fanclubs" target="_self">Fanclubs</a></li>
-                <li><a href="#" id="contactus" title="Contact Us">Contact</a></li> 
+                <li><a href="Contact.html" id="contactus" title="Contact Us">Contact</a></li> 
                 <li><a href="Logout.html" title="Logout" target="_self">Log Out</a></li>
             </ul>
         </div>
     </div>
     </header>
+
+      <div class="innermenu">
+            <ul class="clearfix">
+        	 <li><a href="index.html" title="home" target="_self">Home</a> </li>
+          </ul>
+        </div>
     <!-- header ends -->
     <!-- container starts-->
     <div class="contetns">
@@ -98,7 +102,7 @@
             <div class="loginWrap">
                 <!-- tabs-->
                 <div class="loginTabs">
-                    <a href="register.html">Register</a> <a class="blue" href="index.html">Login</a>
+                    <a href="register.html">Register</a> <a class="blue" href="login.html">Login</a>
                 </div>
                 <!-- input -->
                 <div class="clear">

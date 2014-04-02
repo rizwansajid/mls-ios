@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title></title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.8.3.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.Storage.js"></script>
+    <script type="text/javascript" src="js/json2.js"></script>
+    <script type="text/javascript" src="js/ckeditor.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            // run the currently selected effect
+            function runEffect() {
+                // get effect type from
+                var selectedEffect = $("#effectTypes").val();
+
+                // most effect types need no options passed by default
+                var options = {};
+                // some effects have required parameters
+                if (selectedEffect === "scale") {
+                    options = { percent: 0 };
+                } else if (selectedEffect === "size") {
+                    options = { to: { width: 200, height: 60 } };
+                }
+                // run the effect
+                $("#effect").toggle(selectedEffect, options, 300);
+            };
+
+            // set effect from select menu value
+            $("#button").click(function () {
+                runEffect();
+                return false;
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <div id="wraper">
+        <header>
+            <div style="background: #800000; height: 57px;">
+                <div class="newmenubar">
+                    <a class="newmenucolor" id="myaccountimage" href="MyAccount.html" title="My Account" target="_self"></a>
+                    <a class="newmenucolor" id="messageimage" href="Messages.html" title="Messages" target="_self"></a>
+                </div>
+            </div>
+            <select name="effects" id="effectTypes" style="display: none;">
+                <option value="drop">Drop</option>
+
+            </select>
+            <a href="#" id="button"></a>
+            <div class="toggler">
+                <div id="effect" class="ui-widget-content ui-corner-all" style="display: none;">
+                    <ul id="nav">
+                        <li><a href="userprofile.html" title="User Profile" target="_self">Profile</a> </li>
+                        <li><a href="SportsDefinitions.html" target="_self" title="Sports">Sports</a> </li>
+                        <li><a href="CreateArticle.html" title="CreateArticle" target="_self">Article</a> </li>
+                        <li><a href="CreateTeam.html" title="Teams" target="_self">Teams</a></li>
+                        <li><a href="CreateFanClub.html" title="Fanclubs" target="_self">Fanclubs</a></li>
+                        <li><a href="Contact.html" id="contactus" title="Contact Us">Contact</a></li>
+                        <li><a href="Logout.html" title="Logout" target="_self">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="innermenu">
+            <ul class="clearfix">
+                <li>
+                    <a href="index.html" target="_self" title="How 2 use">Home</a>
+                </li>
+               
+            </ul>
+        </div>
+        <!-- inner menu ends-->
+        <div class="contetns">
+            <div class="innerwrapper">
+                <div class="aboutusli">
+                    <div class="largeParagraphs">
+
+                        <p style="margin-top: 0px; font-size: 12px; margin: 0 0 10px 0; font-family: Arial, Helvetica, Verdana, sans-serif;">
+                            A <span style="color: #00B0F0;"><b><i>Free</i></b></span>, <i>Interactive, Global Sports / Social Community</i> to Create, Share & Preserve Your Sport Memories...
+                                 to connect with friends, family, teammates, professionals... and more!  We introduce you the world of 
+                                  opportunities in sports recognition, competition and connections. 
+                        </p>
+                        <p style="font-size: 16px; text-align: center; color: #0070C0"><b><i>"For Kids, Families & Adults of All Ages"</i></b></p>
+                        <h1 style="font-size: 22px; text-align: center; color: black"><b>Resources For All Members</b></h1>
+
+                        <div class="aboutusleftcol">
+                            <div class="aboutuscomponent">
+                                <h1 style="color:green;">This is “All About You” / Your Personal Account Management Center
+                                </h1>
+                                <!--<ul>
+                                    <li>•	Create Your Sport Memories Using Our Exclusive Timeline Feature
+                                    </li>
+                                    <li>•	Create Profiles for All of Your Sport and Skill-Set Related Activities.
+                                    </li>
+                                    <li>•	Submit Videos * Photos * Articles and Pertinent Information exclusive to Your Sport and Related Interests</li>
+                                    <li>•	Add Highlights * Awards * Testimonials, Educational Achievements Events * Statistics * Opinions * Podcasts * RSS Feeds & Expertise</li>
+                                    <li>•	Share to over 460 social and professional networks, members, Invited friends...and more.</li>
+                                    <li>•	Whatever your sport affiliation or activity you can share in any of our 30,000 sport selections from the USA and 265 countries, each with their individual sport website and millions of interactive features.</li>
+                                    <li>•	Choose from over 5,000,000 identifying sport, health, and educational related connections to share your sport & personal accomplishments, expertise, services, products...and so much more!....</li>
+
+                                </ul>-->
+
+
+                            </div>
+                        </div>
+                        <br />
+                        <div>
+                            <h1 style="color: #0070C0;">To view our opportunities below, please use your PC / tablets for full details or <a href="http://www.kids2prosports.com/Ecomm/AboutUs.aspx">Click here...</a></h1>
+                            <!--<div>
+                                <p>Your Personal Account Management Center</p>
+                                <p>
+                                    30,000 Sport Selections
+                                </p>
+                                <p>
+                                    My Account / Timeline Feature
+                                </p>
+                                <p>
+                                    Create, Share & Be Challenged
+                                </p>
+                                <p>
+                                    Parents / Family
+                                </p>
+                                <p>
+                                    Personalized Home Page Options
+                                </p>
+                                <p>
+                                    Create as Many Profiles You Wish
+                                </p>
+                                <p>
+                                    Be Discovered
+                                </p>
+                                <p>
+                                    Create Personalized Home Pages / Features
+                                </p>
+                                <p>
+                                    Create Teams and Fan Clubs for Any Sport
+                                </p>
+                                <p>
+                                    Advanced Search Options
+                                </p>
+                                <p>
+                                    Family Accounts
+                                </p>
+                                <p>
+                                    Promote Yourself
+                                </p>
+                                <p>
+                                    Professional Resources
+                                </p>
+                                <p>
+                                    Multicultural Applications
+                                </p>
+                                <p>
+                                    Mobile Applications / Desktop
+                                </p>
+                                <p>
+                                    Collegiate Recruiting
+                                </p>
+                                <p>
+                                    K2PS Associations
+                                </p>
+                                <p>
+                                    Earn Money With K2PS
+                                </p>
+                                <p>
+                                    Philanthropy / Mission
+                                </p>
+                                <p>
+                                    Write4K2PS
+                                </p>
+                                <p>
+                                    Tech & Business Services
+                                </p>
+                                <p>
+                                    Affiliates
+                                </p>
+                                <p>
+                                    Additional Features / Opportunities
+                                </p>
+                                <p>
+                                    Media Kit
+                                </p>
+                            </div>-->
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        
+    
+</body>
+</html>
