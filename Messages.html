@@ -93,7 +93,7 @@
                             //    alert(messages[i].id);
                             //}
                             var html = $.map(response.d, function (item, i) {
-                                return "<tr><th> " + item.id + "</th> <th>" + item.DateTime + "</th><th>" + item.MessageFrom + "</th><th>" + item.MessageHeader + "</th><th><a id=viewmessage href='viewmessage.html?id=" + item.id + "'>" + item.id + "</a></th></tr>";
+                                return "<tr><th>" + item.DateTime + "</th><th>" + item.MessageFrom + "</th><th>" + item.MessageHeader + "</th><th><a id=viewmessage href='viewmessage.html?id=" + item.id + "'>" + item.id + "</a></th></tr>";
                             }).join("");
 
                             $("#usermessage").append(html);
@@ -191,8 +191,8 @@
                     <thead>
                         <tr>
                            
-                            <th>ID
-                            </th>
+                            <!--<th>ID
+                            </th>-->
                             <th>Date & Time
                             </th>
                             <th>Message From

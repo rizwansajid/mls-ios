@@ -143,13 +143,13 @@ em {
 #outerBg p{ color:#000000; text-align:center;}
 .guest {margin:20px auto 5px auto; width:172px;}
 .guest a { background:url(../images/guest.png) no-repeat left top; font-size: 12px; list-style-type:none; text-decoration:none; width:172px;  display:block; height:30px;}
-.login {margin:0 auto; text-align:center;padding-top: 5px;}
+.login {margin:0 auto; text-align:center;padding-top: 10px;}
 a#login {background:url(../images/login.png) no-repeat left top; font-size: 12px; list-style-type:none; text-decoration:none; width:112px; height:30px; margin:0 20px 0 0; display:inline-block;}
 a#regg {background:url(../images/register.png) no-repeat left top; font-size: 12px; list-style-type:none; text-decoration:none; width:112px; height:30px; display:inline-block;}
 
 /* three Tabsasdfasdf */
 
-#centerTabs { margin:5px auto; text-align:center }
+#centerTabs { margin:0 auto; text-align:center }
 a#thire1 {background:url(../images/welcomeBtn.png) no-repeat left top; display:inline-block; width:116px; height:34px; }
 a#thire2 {background:url(../images/sports.png) no-repeat left top; display:inline-block; width:116px; height:34px; }
 a#thire3 {background:url(../images/Multi.png) no-repeat left top; display:inline-block; width:116px; height:34px; }
