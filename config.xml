@@ -7,14 +7,16 @@
   <preference name="phonegap-version" value="2.9.0" />
   <!-- versionCode is optional and Android only -->
 
-  <name>KidsToProSports</name>
+  <name>MyLifeSports</name>
 
   <description>
-    Kids2ProSports is the world’s premier multicultural Global Sports Network and Legacy Search Engine. It’s exclusive “Timeline Features” provide the resources to Create, Share and Preserve “Your Sports Legacy“ from Childhood… to Professional and Beyond.
+    MyLifeSports.net is an interactive Global Sports & Social Community where you can Create, 
+    Share & Preserve Your Sports Memories… for your entire lifetime. Explore Infinite Opportunities
+    in Sports Recognition, Competition & Connections... and Showcase Your Services & Expertise.
   </description>
 
-  <author href="http://www.kids2prosports.com" email="adnanlatif.324@gmail.com">
-    Adnan Latif
+  <author href="http://www.MyLifeSports.com" email="rizwan.2bv@gmail.com">
+    Rizwan Sajid
   </author>
   <icon src="images/icon.png" gap:role="default" />
   <!--icons -->
