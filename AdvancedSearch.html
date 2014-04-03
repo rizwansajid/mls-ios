@@ -47,15 +47,17 @@
                 alert('You\'re Offline now...');
                 return false;
             }
-        }
-$function(){
-$("#ListPrefix").change(function(){
-GetUserSearch();
-	
-			});
-		}); 
+            $("#ListPrefix").change(function () {
+                GetUserSearch();
+
+            });
+       });
+
+        
+        
+        
 			
-			});
+			
 function renderTable(result) {
                 var dtData = [];
                 $.each(result, function () {
